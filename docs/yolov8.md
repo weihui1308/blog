@@ -43,8 +43,6 @@ metrics = model.val(data='config/dataset.yaml', save_json=True)
 # 测试结果会保存在runs文件夹下
 # save_json=True，会将检测结果保存在一个json文件里，便于后续的分析
 
-# Validate the model
-metrics = model.val()  # no arguments needed, dataset and settings remembered
 metrics.box.map    # map50-95
 metrics.box.map50  # map50
 metrics.box.map75  # map75
