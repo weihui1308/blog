@@ -383,7 +383,7 @@ class COCO2YOLO:
                     pass
                 else:
                     continue
-                if obj[2][-1] * 640 > 0:
+                if obj[2][-1] > 0.2:
                     pass
                 else:
                     continue
@@ -404,4 +404,4 @@ if __name__ == '__main__':
     c2y = COCO2YOLO()
     c2y.coco2yolo()
 ```
-该代码支持根据标注文件中object的height进行筛选，例如只保留height大于100像素的objects。
+该代码支持根据标注文件中object的height进行筛选，例如只保留height大于0.2的objects。
