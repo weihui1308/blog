@@ -17,7 +17,7 @@ YOLOv5格式数据集的目录结构为：
       - img3.jpg
       - img4.jpg
       - ...
-  - label
+  - labels
     - train
       - img1.txt
       - img2.txt
