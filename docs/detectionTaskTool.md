@@ -1,5 +1,7 @@
 # Object Detection任务中tools
 这里收集Object Detection任务中一些常用的代码片段，每个代码片段实现一个功能。
+### 0. 基础知识
+- YOLO格式数据集的bbox为(x_center, y_center, w, h)，而COCO格式数据集的bbox为(x_left, y_top, w, h)。
 ### 1. 可视化某一张image对应的label
 前提：数据集格式为YOLO格式。  
 需要修改对应的image路径和label路径，运行后会得到一张包含bounding boxes的图像。
