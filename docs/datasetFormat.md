@@ -26,7 +26,9 @@ YOLOv5格式数据集的目录结构为：
       - img3.txt
       - img4.txt
       - ...
+
 ---
+
 COCO格式数据集
 - dataset
     - train
@@ -40,6 +42,7 @@ COCO格式数据集
     - annotations
       - train.json
       - val.json
+      
 ---
 
 转换代码如下：
