@@ -48,3 +48,17 @@ metrics.box.map50  # map50
 metrics.box.map75  # map75
 metrics.box.maps   # a list contains map50-95 of each category
 ```
+
+## 使用YOLOv8在数据集上做训练
+```python
+from ultralytics import YOLO
+
+# Load a model
+#model = YOLO("yolov8s.yaml")  # build a new model from YAML
+model = YOLO("checkpoints/yolov8s.pt")  # load a pretrained model (recommended for training)
+#model = YOLO("yolov8n.yaml").load("yolov8n.pt")  # build from YAML and transfer weights
+
+# Train the model
+results = model.train(data="config/custom.yaml", epochs=100, imgsz=640)
+```
+
