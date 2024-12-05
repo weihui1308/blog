@@ -73,11 +73,11 @@ fourcc = cv2.VideoWriter_fourcc(*'H264')
 ### 结果
 我又把编码改了回去，重新使用'mp4v'，运行代码生成视频文件。
 
-然后在机器上安装了FFmpeg：
+然后在机器上安装了FFmpeg, 在命令行中执行：
 ```shell
 sudo apt install ffmpeg libavcodec-extra
 ```
-安装成功后使用FFmpeg将视频从'mp4v'转码到'H264'：
+安装成功后使用FFmpeg将视频从'mp4v'转码到'H264'，在命令行中执行：：
 ```shell
 ffmpeg -i "./runs1/yolov11.mp4" -vcodec libx264 -crf 20 "./runs/yolov11.mp4"
 ```
