@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -6,64 +5,163 @@
         <meta charset="utf-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Hui Wei</title>
-        <link rel="stylesheet" href="https://weihui1308.github.io/css/main_wh.css">
-    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog | Hui Wei</title>
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
         <style>
-            table {
-            border-collapse: collapse;
+            .styled-link {
+              font-size: 13px;
+              color: #5183f5;
+              text-decoration: none;
+              font-weight: 500;
+              padding: 0.2em 0.7em;
+              background-color: #f1f5fe;
+              border-radius: 4px;
+              transition: all 0.2s ease;
+              display: inline-block;
+              margin: 0 0.1em;
             }
-            th, td {
-                padding: 4px 20px; /* 20px用于控制距离 */
-                text-align: left;
+          
+            .styled-link:hover {
+              background-color: #5183f5;
+              color: #fff;
+              transform: translateY(-1px);
             }
-            tr {
-                line-height: 1;
+            
+            .container {
+              max-width: 880px;
+              margin: 0 auto;
+              position: relative;
             }
-            .col-1 {
-                width: 500px;
+            
+            body.dark-mode .styled-link {
+              background-color: #2a3342;
+              color: #7b9dff;
             }
-            .col-2 {
-                width: 150px;
+            
+            body.dark-mode .styled-link:hover {
+              background-color: #7b9dff;
+              color: #111;
+            }
+            
+            /* 新的博客表格样式 */
+            table.blog-list {
+              width: 60%;
+              border-collapse: collapse;
+              margin: 1em 0;
+            }
+            
+            table.blog-list tr {
+              border-bottom: 1px solid #eee;
+              transition: background-color 0.2s ease;
+            }
+            
+            table.blog-list tr:hover {
+              background-color: #f9f9f9;
+            }
+            
+            body.dark-mode table.blog-list tr {
+              border-bottom: 1px solid #333;
+            }
+            
+            body.dark-mode table.blog-list tr:hover {
+              background-color: #2a2a2a;
+            }
+            
+            table.blog-list td {
+              padding: 10px 0;
+              vertical-align: top;
+            }
+            
+            table.blog-list td:first-child {
+              padding-right: 20px;
+            }
+            
+            /* 时间日期样式 - 使用等宽字体 */
+            .blog-date {
+              font-family: 'JetBrains Mono', monospace; /* 等宽字体 */
+              font-weight: 500;
+              color: #555;
+              text-align: right;
+              white-space: nowrap;
+              width: 120px;
+            }
+            
+            /* 适配暗黑模式的日期颜色 */
+            body.dark-mode .blog-date {
+              color: #aaa;
+            }
+            
+            /* 移动设备适配 */
+            @media (max-width: 768px) {
+              table.blog-list .blog-date {
+                width: auto;
+                font-size: 0.9em;
+              }
+              
+              table.blog-list td:first-child {
+                padding-right: 10px;
+              }
             }
         </style>
+        
+        <!-- 添加主题切换脚本 -->
+        <script src="style/dark-mode.js"></script>
    </head>
+    <body>
 
-<body>
+<div class="container">
+    <!-- 添加暗黑模式切换按钮 -->
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="icon-light">🌙</span>
+        <span class="icon-dark">☀️</span>
+    </button>
 
-
-<div id='cssmenu' style='width:700px;'>
-<ul>
-<li><a href="https://weihui1308.github.io/index.html"><span>Home</span></a></li>
-<li><a href="https://weihui1308.github.io/pub/publications.html"><span>Publications</span></a></li>
-<li><a href="https://weihui1308.github.io/exp/experience.html"><span>Experience</span></a></li>
-<li><a href="https://weihui1308.github.io/honors/honors.html"><span>Honors</span></a></li>
-<li><a href="https://weihui1308.github.io/blog/"><span>Blog</span></a></li>
-<li><a href="https://weihui1308.github.io/resource/resource.html"><span>Helpful Resources</span></a></li>
-</ul>
-</div>
+    <div id='cssmenu'>
+        <ul>
+            <li><a href="https://weihui1308.github.io/index.html"><span>Home</span></a></li>
+            <li><a href="https://weihui1308.github.io/pub/publications.html"><span>Publications</span></a></li>
+            <li><a href="https://weihui1308.github.io/exp/experience.html"><span>Experience</span></a></li>
+            <li><a href="https://weihui1308.github.io/honors/honors.html"><span>Honors</span></a></li>
+            <li><a href="https://weihui1308.github.io/blog/"><span>Blog</span></a></li>
+            <li><a href="https://weihui1308.github.io/resource/resource.html"><span>Resources</span></a></li>
+        </ul>
+    </div>
 
 <div>
 
     <h2>Personal Blog</h2>
 
-    Documenting shareable contents.<br>
+    <p>Documenting shareable contents.</p>
 
-    Feedback and discussions are welcome; please <a href="https://github.com/weihui1308/blog/issues">submit an issue</a>.<br><br>
+    <p>Feedback and discussions are welcome; please <a href="https://github.com/weihui1308/blog/issues">submit an issue</a>.</p>
     
     <hr>
 
-    <table>
-        <tr>     <td><a href="https://weihui1308.github.io/blog/docs/2025_05_13_WHU">游记-武汉大学凌波门东湖日出</a></td><td>2025-05-13</td> </tr>
-        <tr>     <td><a href="https://weihui1308.github.io/blog/docs/videoencode">浏览器中播放本地视频遇到的问题</a></td><td>2024-12-05</td> </tr>
-        <tr>     <td><a href="https://weihui1308.github.io/blog/docs/datasetFormat">Object Detection任务中的数据集格式转换</a></td><td>2024-06-12</td> </tr>
-        <tr>     <td><a href="https://weihui1308.github.io/blog/docs/yolov8">使用YOLOv8的记录</a></td><td>2024-05-18</td> </tr>
+    <table class="blog-list">
+        <tr>
+            <td><a href="https://weihui1308.github.io/blog/docs/2025_05_13_WHU">游记-武汉大学凌波门东湖日出</a></td>
+            <td class="blog-date">[2025.05.13]</td>
+        </tr>
+        <tr>
+            <td><a href="https://weihui1308.github.io/blog/docs/videoencode">浏览器中播放本地视频遇到的问题</a></td>
+            <td class="blog-date">[2024.12.05]</td>
+        </tr>
+        <tr>
+            <td><a href="https://weihui1308.github.io/blog/docs/datasetFormat">Object Detection任务中的数据集格式转换</a></td>
+            <td class="blog-date">[2024.06.12]</td>
+        </tr>
+        <tr>
+            <td><a href="https://weihui1308.github.io/blog/docs/yolov8">使用YOLOv8的记录</a></td>
+            <td class="blog-date">[2024.05.18]</td>
+        </tr>
     </table>
 
     <hr>
 </div>
-
-
 
 </body>
 </html>
