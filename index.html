@@ -95,15 +95,31 @@
               color: #aaa;
             }
             
-            /* 移动设备适配 */
+            /* 响应式调整 */
             @media (max-width: 768px) {
-              table.blog-list .blog-date {
-                width: auto;
-                font-size: 0.9em;
+              ul {
+                padding-left: 1.2em;
               }
               
-              table.blog-list td:first-child {
-                padding-right: 10px;
+              ul ul {
+                padding-left: 1em;
+                margin-top: 0.2em;
+                margin-bottom: 0.8em;
+              }
+            }
+            
+            /* 更小屏幕优化 */
+            @media (max-width: 480px) {
+              ul {
+                padding-left: 1em;
+              }
+              
+              ul ul {
+                padding-left: 0.8em;
+              }
+              
+              ul > li {
+                margin-bottom: 0.6em;
               }
             }
         </style>
