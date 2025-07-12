@@ -45,9 +45,15 @@ theme:
 
 # 导航结构
 nav:
-  - 首页: index.html
+  # - 首页: index.html
   - 数学:
-    - docs/yolov8.md
+    - 2025_05_13_WHU.md
+    - 2025_07_12_train-val-test.md
+    - codeCollect.md
+    - datasetFormat.md
+    - detectionTaskTool.md
+    - videoencode.md
+    - yolov8.md
 
 
 # Markdown 扩展
