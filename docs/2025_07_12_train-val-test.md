@@ -2,7 +2,9 @@
 在刚开始接触深度学习时，训练集(Training Set)、验证集(Validation Set)和测试集(Test Set)是需要第一时间理解的概念，因为这涉及到深度学习的基本运行原理。
 
 定义: 一个深度学习模型为$f$, 输入为$X$, 输出为$Y'$, 真实标签(GT, Ground Truth)为$Y$, $f$的可学习参数, 即优化参数为$\theta$。那么训练的过程就是:
-$$\theta^* = \arg\min_\theta \mathcal{L}(f_\theta(X), Y).$$
+
+$\theta^* = \arg\min_\theta \mathcal{L}(f_\theta(X), Y).$
+
 这里$\mathcal{L}$是一个损失函数(loss function)，用于定量模型预测结果$Y'$和真实标签$Y$之间的距离，例如交叉熵损失(cross-entropy loss)或MSE损失(mean squared error loss)。
 
 ## 训练集(Training Set)、验证集(Validation Set)和测试集(Test Set)
