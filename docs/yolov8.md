@@ -1,10 +1,3 @@
----
-layout: default
-title: 使用YOLOv8的记录
----
-
-<link rel="stylesheet" href="/assets/css/style.css">
-
 # 使用YOLOv8的记录
 [YOLOv8](https://github.com/ultralytics/ultralytics)是ultralytics公司继YOLOv3和YOLOv5推出的新一代YOLO模型，具有处理Classify，Detect，Segment，Track，Segment五大任务的能力。本文只关注在Detect任务上的使用。在调试过程中发现，YOLOv8较之前版本的YOLO模型更加易用，但代价是封装度更高了。下面记录使用过的代码片段和注释。
 ## YOLOv8的安装
