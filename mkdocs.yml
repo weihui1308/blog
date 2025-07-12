@@ -1,12 +1,12 @@
 site_name: 我的技术文档
 site_description: 包含数学公式的技术文档网站
 site_author: 你的名字
-site_url: https://yourusername.github.io/your-repo-name
+site_url: https://weihui1308.github.io/blog/
 
 # 仓库信息
-repo_name: yourusername/your-repo-name
-repo_url: https://github.com/yourusername/your-repo-name
-edit_uri: edit/main/docs/
+repo_name: weihui1308/blog
+repo_url: https://github.com/weihui1308/blog
+edit_uri: tree/main/docs
 
 # 主题配置
 theme:
@@ -45,15 +45,10 @@ theme:
 
 # 导航结构
 nav:
-  - 首页: index.md
+  - 首页: index.html
   - 数学:
-    - math/index.md
-    - 代数: math/algebra.md
-    - 微积分: math/calculus.md
-  - 编程:
-    - programming/index.md
-    - Python: programming/python.md
-    - JavaScript: programming/javascript.md
+    - docs/yolov8.md
+
 
 # Markdown 扩展
 markdown_extensions:
