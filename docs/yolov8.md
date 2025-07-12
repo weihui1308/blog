@@ -2,6 +2,7 @@
 layout: default
 title: 使用YOLOv8的记录
 ---
+
 <link rel="stylesheet" href="/assets/css/style.css">
 
 # 使用YOLOv8的记录
