@@ -19,6 +19,7 @@ pin: false
 
     $ cp -r dir1 dir2
     将目录dir1下的所有文件复制到dir2目录下，复制结果目录被改名为dir2
+    ````
 2. 跨机器的文件传输
     ````
     $ scp local_file remote_username@remote_ip:remote_folder 
@@ -30,10 +31,12 @@ pin: false
 
     $ rsync -P --rsh=ssh local_file remote_username@remote_ip:remote_folder 
     传大文件时，失败了可以继续传
+    ````
 3. 传文件夹
     ````
     scp  -r /tmp/local_dir remote_username@remote_ip:remote_dir
     从本地上传到指定机器的文件夹下
+    ````
 ## 文件解压缩
 1. zip文件
     ````
@@ -42,6 +45,7 @@ pin: false
 
     $ unzip -o -d /home/sunny myfile.zip
     把myfile.zip文件解压到 /home/sunny/
+    ````
 2. tar.gz文件
     ````
     $ tar -tzvf file.tar.gz
@@ -55,28 +59,36 @@ pin: false
 
     $ tar -xzvf file.tar.gz foder/access.log.0805 -C /new/dir/    
     -C 指定解压到的目录.
+    ````
 ## 查看
 1. 查看磁盘的使用情况
     ````
     $ df -h
+    ````
 2. 查看文件大小
     ````
     $ ls  -l    filename
+    ````
 3. 查看当前文件夹占磁盘空间大小
     ````
     $ du    -sh
+    ````
 4. 查看当前目录下的文件数量（不包含子目录中的文件）
     ````
     $ ls -l|grep "^-"| wc -l
+    ````
 5. 查看当前目录下的文件数量（包含子目录中的文件） 注意：R，代表子目录
     ````
     $ ls -lR|grep "^-"| wc -l
+    ````
 6. 查看当前目录下的文件夹目录个数（不包含子目录中的目录），同上述理，如果需要查看子目录的，加上R
     ````
     $ ls -l|grep "^d"| wc -l
+    ````
 7. 查看当前目录下.jpg文件的数量
     ````
     $ ls -lR | grep "jpg" | wc -l
+    ````
 8. ncdu命令
     ````
     $ sudo apt install ncdu
@@ -91,6 +103,7 @@ pin: false
     快捷键提示
     $ ncdu 目录
     扫描指定目录的信息
+    ````
 ## 复制、移动和删除
 1. 文件夹
     ````
@@ -101,11 +114,13 @@ pin: false
 
     $ mv info/ logs  
     将 info 目录放入 logs 目录中。注意，如果 logs 目录不存在，则该命令将 info 改名为 logs。
+    ````
 2. 文件
     ````
     $ cp -i filename dir1
     $ rm -f filename
     $ mv aaa bbb
+    ````
 ## tmux的使用
 1. 查看会话
     ````
@@ -145,9 +160,12 @@ pin: false
 1. 创建环境
     ````
     conda create -n your_env_name python=X.X
+    ````
 2. 删除环境
     ````
     conda remove -n your_env_name --all
+    ````
 3. 查看环境
     ````
     conda info --env
+    ````
