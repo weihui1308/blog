@@ -1,7 +1,7 @@
 ---
 title: 一些常用的linux命令
 author: david
-date: 2028-07-28 14:34:00
+date: 2028-07-27 14:34:00
 categories: [Linux]
 tags: [linux command]
 comments: false
