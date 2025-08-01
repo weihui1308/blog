@@ -1,4 +1,13 @@
-# 常用代码片段收集
+---
+title: 常用代码片段收集
+author: david
+date: 2025-08-01 12:34:00
+categories: [Code, Snippet]
+tags: [code]
+comments: false
+pin: false
+---
+
 从平时coding中收集一些常用的代码片段，记录在这里，方便以后复用。
 ### 1. 项目代码入口
 ```python

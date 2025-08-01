@@ -8,7 +8,7 @@ toc: false
 math: true
 ---
 
-# 关于深度学习中训练集(Training Set)、验证集(Validation Set)和测试集(Test Set)的说明与实践
+## 关于深度学习中训练集(Training Set)、验证集(Validation Set)和测试集(Test Set)的说明与实践
 在刚开始接触深度学习时，训练集(Training Set)、验证集(Validation Set)和测试集(Test Set)是需要第一时间理解的概念，因为这涉及到深度学习的基本运行原理。
 
 定义: 一个深度学习模型为$f$, 输入为$X$, 输出为$Y'$, 真实标签(GT, Ground Truth)为$Y$, $f$的可学习参数, 即优化参数为$\theta$。那么训练的过程就是:

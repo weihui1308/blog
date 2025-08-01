@@ -2,7 +2,7 @@
 title: 一些常用的linux命令
 author: david
 date: 2025-07-27 10:34:00
-categories: [Linux]
+categories: [Linux, Command]
 tags: [linux command]
 comments: false
 pin: false
