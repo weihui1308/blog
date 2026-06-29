@@ -9,7 +9,7 @@ theme: jekyll-theme-chirpy
 lang: en
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone: Asia/Shanghai
+timezone: Etc/GMT+12 # Anywhere on Earth (AoE, UTC-12)
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
@@ -148,6 +148,11 @@ pwa:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
 paginate: 10
+
+# Publish posts whose date is in the future. Needed because the site timezone is
+# Anywhere on Earth (UTC-12): a post stamped "today" is hours ahead in UTC, and Jekyll
+# (default future: false) would otherwise silently drop it at build time.
+future: true
 
 # The base URL of your site
 baseurl: "/blog"
