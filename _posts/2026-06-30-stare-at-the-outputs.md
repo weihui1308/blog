@@ -8,7 +8,7 @@ comments: false
 pin: false
 ---
 
-There is a line from an anonymous essay, *How to Be Good at Research*, that is worth taping above a monitor: **"a descending loss curve is not analysis, it's reassurance."**
+There is a line from Vivek's essay [*How to Be Good at Research*](https://x.com/itsreallyvivek/article/2064686372737454155) that is worth taping above a monitor: **"a descending loss curve is not analysis, it's reassurance."**
 
 The curve going down tells you the optimizer is doing its job. It tells you almost nothing about *why* the model fails, or whether it is learning the thing you actually care about. Yet a training run throws off far more information than that one line — transcripts, failure cases, the strange tail of the distribution — and most of it, as the essay puts it, "dies unread in a logs folder."
 
@@ -24,4 +24,4 @@ So before you reach for a bigger model or a new loss, do the cheap thing first. 
 
 ## References
 
-- *How to Be Good at Research* (anonymous essay) — for the "loss curve is reassurance" framing and the Karpathy and Ng examples. Source byline unavailable.
+- Vivek ([@itsreallyvivek](https://x.com/itsreallyvivek)). [*How to Be Good at Research*](https://x.com/itsreallyvivek/article/2064686372737454155). X — for the "loss curve is reassurance" framing and the Karpathy and Ng examples.
